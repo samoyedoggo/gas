@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+html {
+  /* フォントサイズを100%で指定しておくことで、ユーザーがブラウザで設定したフォントサイズが正しく反映されます */
+  font-size: 100%;
+}
+.hoge:before {
+    font-family: 'FontAwesome';
+    content: "\f083";
+}
+.hoge1:before {
+    font-family: 'FontAwesome';
+    content: "\f084";
+}
+body {
+  color: #383e45;
+  font-size: 0.9rem;
+}
+a {
+  /* 今回は、サイト内のリンクに下線が表示されないように設定します */
+  text-decoration: none;
+}
+img {
+  /* 画像が画面の横幅からはみ出るのを防ぐためにmaxサイズを設定します */
+  max-width: 100%;
+}
+li {
+  list-style: none;
+}
+h1 {
+    position: relative;
+    left: 45%;
+    /* top: 50%; */
+}
+h3 {
+    top: 431px;
+left: 777px;
+width: 400px;
+height: 20px;
+text-align: left;
+font: normal normal normal 20px/34px Hiragino Kaku Gothic ProN;
+letter-spacing: 0px;
+color: #707070;
+opacity: 1;
+}
+
+.start {
+    /* position: relative;
+    left: 50%;
+    top: 50%; */
+top: 514px;
+left: 752px;
+width: 115px;
+height: 20px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 20px/34px Hiragino Kaku Gothic ProN;
+letter-spacing: 0px;
+color: #707070;
+opacity: 1;
+top: 502px;
+left: 715px;
+width: 183px;
+height: 44px;
+background: #292323 0% 0% no-repeat padding-box;
+border: 1px solid #707070;
+opacity: 1;
+}
+.site-title {
+  width: 120px;
+  line-height: 1px;
+  padding: 10px 0;
+}
+/* aタグのリンク範囲を親要素のサイズに広げます */
+.site-title a {
+  display: block;
+}
+/* h2タグ用 */
+.section-title {
+  display: inline-block;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 60px;
+  border-bottom: solid 1px #383e45;
+}
+/* h3タグ用 */
+.content-title {
+
+    margin: 10px 0;
+}
+/* 画面の最大幅を指定。共通で使用します */
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto 100px auto;
+    padding: 0 4%;
+    text-align: center;
+}
+
+footer{
+    font-size: 80%;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    height: 100px;
+    padding-bottom: 10px;
+    background-color: #313131;
+    border: 1px solid #707070;
+    opacity: 1;
+}
+footer address{
+    color: #fff;
+    letter-spacing: 5px;
+}
