@@ -13,7 +13,7 @@
 これを`git clone`
 ucanさんの記事を参考に構築
 
-srcディレクトリがlaravelプロジェクトディレクトリなので、よしなに入れ替えて(compoeser update →)`composer install`する。
+srcディレクトリがlaravelプロジェクトディレクトリなので、よしなに入れ替えて`compoeser update && composer install`する。
 
 [参考]
 laravel + docker https://qiita.com/ucan-lab/items/5fc1281cd8076c8ac9f4#%E4%BD%BF%E3%81%84%E6%96%B9
