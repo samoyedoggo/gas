@@ -5,4 +5,3 @@
     <textarea name="content" cols="30" rows="10"></textarea>
     <input type="submit" value="送信">
 </form>
-

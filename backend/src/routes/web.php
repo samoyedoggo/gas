@@ -31,10 +31,14 @@ Route::get('/together.html', function () {
 });
 
 
-
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/input',
+[ContentController::class, 'input'])->name('input');
+
+Route::post('/save', [ContentController::class, 'save'])->name('save');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

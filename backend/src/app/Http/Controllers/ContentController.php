@@ -9,12 +9,12 @@ use App\Models\Content;
 
 class ContentController extends Controller
 {
- public function input()
- {
-    return view('contents.input');
- }
+public function input()
+{
+return view('contents.input');
+}
 
- public function save(Request $request)
+public function save(Request $request)
 {
     $input_content = new Content();
     $input_content->content = $request['content'];
