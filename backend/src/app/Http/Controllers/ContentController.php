@@ -18,7 +18,7 @@ class ContentController extends Controller
         $input_content->content = $request['content'];
         $input_content->save();
 
-        return redirect(route('input'));
+        return redirect(route('output'));
     }
 
     public function output()
