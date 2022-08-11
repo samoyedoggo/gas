@@ -47,3 +47,9 @@ require __DIR__.'/auth.php';
 Route::get('/input', [ContentController::class, 'input'])->name('input');
 
 Route::post('/save', [ContentController::class, 'save'])->name('save');
+
+Route::get('/detail/{content_id}', [ContentController::class, 'detail'])->name('detail');
+
+Route::get('edit/{content_id}', [ContentController::class, 'edit'])->name('edit');
+
+Route::post('update', [ContentController::class, 'update'])->name('update');
