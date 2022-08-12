@@ -15,10 +15,10 @@ return new class extends Migration
     {
         Schema::create('contents', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->string('content');
-            $table->string('image_url');
-            $table->bool('delete_flg');
+            // $table->string('title', 20)->comment('タイトル');
+            $table->text('content', 60000)->comment('投稿内容');
+            // $table->string('image_url')->comment('urlで画像使用');
+            // $table->boolean('delete_flg')->comment('論理削除フラグ');
             $table->timestamps();
         });
     }

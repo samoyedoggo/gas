@@ -30,8 +30,6 @@ Route::get('/together.html', function () {
     return view('others');
 });
 
-
-
 Route::get('/', function () {
     return view('welcome');
 });
@@ -44,9 +42,11 @@ Route::get('/input', [ContentController::class, 'input'])->name('input');
 
 require __DIR__.'/auth.php';
 
-Route::get('/input', [ContentController::class, 'input'])->name('input');
+// Route::get('/input', [ContentController::class, 'input'])->name('input');
 
 Route::post('/save', [ContentController::class, 'save'])->name('save');
+
+Route::get('/output', [ContentController::class, 'output'])->name('output');
 
 Route::get('/detail/{content_id}', [ContentController::class, 'detail'])->name('detail');
 
