@@ -4,6 +4,7 @@
 <form action="{{route('update')}}" method="post">
     @csrf
     <input type="hidden" name="id" value="{{$item['id']}}">
+    <textarea name="title" cols="30" rows="1" placeholder="タイトル">{{$item['title']}}</textarea><br>
     <textarea name="content" cols="30" rows="10">{{$item['content']}}</textarea>
     <input type="submit" value="送信">
 </form>

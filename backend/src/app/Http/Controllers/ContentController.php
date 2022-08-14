@@ -25,7 +25,7 @@ class ContentController extends Controller
         // $input_content->content = $request['content'];
         // $input_image_url->image_url = $request['image_url'];
         // $input_delete_flg->delete_flg= $request['delete_flg'];
-        // $input_content->title = $request['title'];
+        $input_content->title = $request['title'];
         $input_content->content = $request['content'];
         // $input_content->image_url = $request['image_url'];
         // $input_content->delete_flg= $request['delete_flg_yes'];
@@ -73,6 +73,7 @@ class ContentController extends Controller
     {
         $content_get_query = Content::select('*');
         $content_info = $content_get_query->find($request['id']);
+        $content_info->title = $request['title'];
         $content_info->content = $request['content'];
         $content_info->save();
 
