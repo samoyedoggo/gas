@@ -53,3 +53,9 @@ Route::get('/detail/{content_id}', [ContentController::class, 'detail'])->name('
 Route::get('edit/{content_id}', [ContentController::class, 'edit'])->name('edit');
 
 Route::post('update', [ContentController::class, 'update'])->name('update');
+
+Route::post('article_delete/{id}/', [ContentController::class, 'article_delete'])->name('article_delete');
+
+Route::get('/phpinfo', function () {
+    phpinfo();
+});

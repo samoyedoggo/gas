@@ -9,7 +9,10 @@
             {{-- <textarea type="text" id="fname" name="title" placeholder="タイトル入力"></textarea> --}}
         </div>
         <div>
-            <textarea name="content" cols="30" rows="10" placeholder="内容の入力"></textarea>
+            <textarea name="content" cols="30" rows="10" placeholder="内容の入力"></textarea><br>
+        </div>
+        <div>
+            <input type="text" name="image_url" placeholder="画像URL">
         </div>
     <input type="submit" value="送信">
 </form>

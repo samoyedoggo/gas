@@ -24,6 +24,9 @@ class ContentController extends Controller
         // $input_delete_flg->delete_flg= $request['delete_flg'];
         $input_content->title = $request['title'];
         $input_content->content = $request['content'];
+        $input_content->image_url = $request['image_url'];
+        $input_content->updated_at = $request['updated_at'];
+        $input_content->created_at = $request['created_at'];
         // $input_content->image_url = $request['image_url'];
         // $input_content->delete_flg= $request['delete_flg_yes'];
 
@@ -75,6 +78,19 @@ class ContentController extends Controller
         $content_info->save();
 
         return redirect(route('output'));
+    }
+
+    public function article_delete($id)
+    {
+        // 削除対象レコードを検索
+        $article = Content::find($id);
+
+        //削除
+        $article->delete();
+
+        //リダイレクト
+        return redirect()->to('output')->with('flash_msg','削除が完了しました');
+
     }
 
 }
