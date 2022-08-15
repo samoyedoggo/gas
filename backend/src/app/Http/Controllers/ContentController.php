@@ -15,10 +15,7 @@ class ContentController extends Controller
     public function save(Request $request)
     {
         // DB保存用インスタンス作成
-        // $input_title = new Content();
         $input_content = new Content();
-        // $input_image_url = new Content();
-        // $input_delete_flg = new Content();
 
         // リクエストを送る
         // $input_title->title = $request['title'];
