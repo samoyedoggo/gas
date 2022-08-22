@@ -13,7 +13,7 @@ class Content extends Model
     use SoftDeletes;
 
     /**
-     *　モデルにDBにfillableでアクセス許可を与える。
+     *　モデルにfillableでDBへのアクセス許可を与える。
      *
      * @var array<int, string>
      */

@@ -22,9 +22,9 @@ Route::get('/index.html', function () {
     return view('index');
 });
 
-Route::get('/know.html', function () {
-    return view('know');
-});
+
+Route::get('/know', [ContentController::class, 'know'])->name('know');
+
 
 Route::get('/together.html', function () {
     return view('others');

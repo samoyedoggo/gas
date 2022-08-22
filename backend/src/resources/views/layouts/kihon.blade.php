@@ -30,7 +30,7 @@
             <h3 class="float-md-start my-3">HELCOM</h3>
             <nav class="nav nav-masthead justify-content-center float-md-end my-3">
               <a class="nav-link active" href="index.html">人と繋がる</a>
-              <a class="nav-link" href="know.html">障害を知る</a>
+              <a class="nav-link" href="know">障害を知る</a>
               <a class="nav-link" href="together.html">その他</a>
             </nav>
           </div>

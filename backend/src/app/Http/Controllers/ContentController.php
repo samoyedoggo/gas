@@ -93,4 +93,14 @@ class ContentController extends Controller
 
     }
 
+    //knowコントローラー追加contents配下のディレクトリではない。
+    public function know()
+    {
+        $contents_get_query = Content::select('*');
+        $items = $contents_get_query->get();
+
+        return view('know', [
+            'items' => $items,
+        ]);
+    }
 }

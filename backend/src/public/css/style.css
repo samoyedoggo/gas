@@ -70,10 +70,17 @@ body {
 }
 
 .card {
-    margin: 10px !important;
+    margin: 15px !important;
     border: none !important;
 }
 
 .card h5, .card p {
     color: black;
 }
+
+/* .card-img-top {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+} */
